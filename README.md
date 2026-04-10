@@ -6,7 +6,7 @@ Database Management Systems project on IDFM RER delay data.
 - design a normalized PostgreSQL schema from flat daily CSV files
 - build a reproducible ETL pipeline in Python
 - write and optimize analytical SQL queries
-- later expose selected results in a lightweight dashboard
+- expose selected results in a lightweight dashboard
 
 ## Stack
 - PostgreSQL
