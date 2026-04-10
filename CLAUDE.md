@@ -22,3 +22,5 @@ Primary goals:
   - indexing notes
 - Do not commit full raw datasets or secrets.
 - Prefer small, reviewable changes.
+- Always distinguish direct evidence from inference in design discussions.
+- For SQL and schema work, never make silent assumptions about data semantics; state them explicitly.

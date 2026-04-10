@@ -1,0 +1,154 @@
+{
+  "file_count": 3,
+  "schema_consistent": true,
+  "schemas_found": [
+    [
+      "poll_at_utc",
+      "poll_at_local",
+      "stop_id",
+      "line_code",
+      "mean_delay_s",
+      "mean_lateness_s",
+      "n",
+      "n_neg",
+      "n_pos"
+    ]
+  ],
+  "profiles": [
+    {
+      "file": "2025-12-05.csv",
+      "rows": 99616,
+      "columns": [
+        "poll_at_utc",
+        "poll_at_local",
+        "stop_id",
+        "line_code",
+        "mean_delay_s",
+        "mean_lateness_s",
+        "n",
+        "n_neg",
+        "n_pos"
+      ],
+      "null_counts": {
+        "poll_at_utc": 0,
+        "poll_at_local": 0,
+        "stop_id": 0,
+        "line_code": 0,
+        "mean_delay_s": 0,
+        "mean_lateness_s": 0,
+        "n": 0,
+        "n_neg": 0,
+        "n_pos": 0
+      },
+      "duplicate_candidate_key_rows": 0,
+      "utc_to_local_violations": 0,
+      "unique_stop_ids": 792,
+      "unique_line_codes": 5,
+      "line_codes": [
+        "RER A",
+        "RER B",
+        "RER C",
+        "RER D",
+        "RER E"
+      ],
+      "min_poll_at_utc": "2025-12-05T04:00:01.203000+00:00",
+      "max_poll_at_utc": "2025-12-06T03:58:01.128000+00:00",
+      "mean_delay_min": -3532.0,
+      "mean_delay_max": 3564.0,
+      "mean_lateness_min": 0.0,
+      "mean_lateness_max": 3564.0,
+      "n_min": 1,
+      "n_max": 14
+    },
+    {
+      "file": "2025-12-06.csv",
+      "rows": 76620,
+      "columns": [
+        "poll_at_utc",
+        "poll_at_local",
+        "stop_id",
+        "line_code",
+        "mean_delay_s",
+        "mean_lateness_s",
+        "n",
+        "n_neg",
+        "n_pos"
+      ],
+      "null_counts": {
+        "poll_at_utc": 0,
+        "poll_at_local": 0,
+        "stop_id": 0,
+        "line_code": 0,
+        "mean_delay_s": 0,
+        "mean_lateness_s": 0,
+        "n": 0,
+        "n_neg": 0,
+        "n_pos": 0
+      },
+      "duplicate_candidate_key_rows": 0,
+      "utc_to_local_violations": 0,
+      "unique_stop_ids": 791,
+      "unique_line_codes": 5,
+      "line_codes": [
+        "RER A",
+        "RER B",
+        "RER C",
+        "RER D",
+        "RER E"
+      ],
+      "min_poll_at_utc": "2025-12-06T04:04:01.100000+00:00",
+      "max_poll_at_utc": "2025-12-07T03:58:01.107000+00:00",
+      "mean_delay_min": -1978.0,
+      "mean_delay_max": 3571.0,
+      "mean_lateness_min": 0.0,
+      "mean_lateness_max": 3571.0,
+      "n_min": 1,
+      "n_max": 10
+    },
+    {
+      "file": "2025-12-07.csv",
+      "rows": 64148,
+      "columns": [
+        "poll_at_utc",
+        "poll_at_local",
+        "stop_id",
+        "line_code",
+        "mean_delay_s",
+        "mean_lateness_s",
+        "n",
+        "n_neg",
+        "n_pos"
+      ],
+      "null_counts": {
+        "poll_at_utc": 0,
+        "poll_at_local": 0,
+        "stop_id": 0,
+        "line_code": 0,
+        "mean_delay_s": 0,
+        "mean_lateness_s": 0,
+        "n": 0,
+        "n_neg": 0,
+        "n_pos": 0
+      },
+      "duplicate_candidate_key_rows": 0,
+      "utc_to_local_violations": 0,
+      "unique_stop_ids": 652,
+      "unique_line_codes": 5,
+      "line_codes": [
+        "RER A",
+        "RER B",
+        "RER C",
+        "RER D",
+        "RER E"
+      ],
+      "min_poll_at_utc": "2025-12-07T04:04:01.382000+00:00",
+      "max_poll_at_utc": "2025-12-08T03:58:01.491000+00:00",
+      "mean_delay_min": -228.0,
+      "mean_delay_max": 3568.0,
+      "mean_lateness_min": 0.0,
+      "mean_lateness_max": 3568.0,
+      "n_min": 1,
+      "n_max": 7
+    }
+  ]
+}
