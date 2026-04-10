@@ -11,8 +11,6 @@ Database Management Systems project on IDFM RER delay data.
 ## Stack
 - PostgreSQL
 - Python
-- VS Code
-- Claude Code
 
 ## Structure
 - `data/raw/`: original CSV files, kept local
