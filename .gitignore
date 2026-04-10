@@ -1,0 +1,21 @@
+# Python
+.venv/
+__pycache__/
+*.pyc
+
+# Environment
+.env
+
+# macOS
+.DS_Store
+
+# VS Code local user files
+.vscode/settings.json
+
+# Data
+data/raw/*
+!data/raw/.gitkeep
+
+# Optional processed outputs
+data/processed/*
+!data/processed/.gitkeep
