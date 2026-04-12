@@ -19,3 +19,9 @@ data/raw/*
 # Optional processed outputs
 data/processed/*
 !data/processed/.gitkeep
+
+# Auto-generated profiler output (regenerate with: python etl/profile_dataset.py)
+docs/profile_summary.json
+
+# Internal team logistics — not for public repo
+docs/04_team_briefing.md

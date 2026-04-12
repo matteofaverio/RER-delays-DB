@@ -14,18 +14,24 @@
 
 7. ~~**Run the pipeline**~~ — 11,815,213 fact rows loaded; all constraints satisfied ✓
 8. ~~**Add indexes**~~ — 4 indexes created; EXPLAIN ANALYZE recorded in `docs/02_index_notes.md` ✓
-9. ~~**Write analytical queries**~~ — Q1–Q4 written and verified in `sql/queries/` ✓
+9. ~~**Write analytical queries**~~ — Q1–Q9 written and verified in `sql/queries/` ✓
    - Q1: weekly average delay by line
    - Q2: worst stations by mean lateness (SP grain)
    - Q3: delay by hour-of-day and day-of-week
    - Q4: station ranking with percentile context
-10. ~~**EXPLAIN ANALYZE**~~ — all four queries profiled; notes in `docs/03_query_notes.md` ✓
-11. **Dashboard** — only after schema and queries are stable
+   - Q5: station delay timeline (point lookup, dashboard drill-down)
+   - Q6: line comparison over date range (index range scan)
+   - Q7: geographic delay map (lat/lon for interactive map)
+   - Q8: peak vs off-peak comparison (CASE WHEN conditional aggregation)
+   - Q9: delay distribution histogram (width_bucket)
+10. ~~**EXPLAIN ANALYZE**~~ — all 9 queries profiled; notes in `docs/03_query_notes.md` ✓
+11. ~~**Forced-plan comparison**~~ — natural vs forced plan, 289× cost difference documented ✓
+12. **Report** — sections assigned across team (see `docs/04_team_briefing.md`)
+13. **Dashboard** — Streamlit, 5 pages, assigned to colleague
+14. **Presentation** — after report is drafted
 
-## Open questions before step 9
+## Resolved questions
 
-- Confirm semantics of `n`, `n_neg`, `n_pos` from IDFM documentation
-- Decide whether to filter to one stop granularity (Q or SP) for station aggregates,
-  or add a `stop_granularity` column to `fact_delay_events`
-- Decide whether `dim_time` stays as a physical table or gets dropped in favour of
-  extracting time attributes in queries
+- SP-type stop_ids used for station-level aggregation (Q2, Q4, Q5, Q7) to avoid double-counting
+- `dim_time` kept as physical table — used by Q3 and Q8 for local-time extraction
+- `n`, `n_neg`, `n_pos` semantics remain inferred (not confirmed from IDFM docs)
