@@ -58,7 +58,3 @@ streamlit run dashboard/app.py
 The ETL pipeline is idempotent — re-running it on an already-loaded database is safe.  
 Pass `--reset` to drop all schemas and rebuild from scratch (development only).
 
-## Authors
-
-Nicola Cuzzola · Matteo Faverio · Lorenzo Marzuillo  
-DBMS Course — April 2026
