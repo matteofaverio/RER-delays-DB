@@ -25,3 +25,10 @@ docs/profile_summary.json
 
 # Internal team logistics — not for public repo
 docs/04_team_briefing.md
+docs/00_current_understanding.md
+docs/01_task_order.md
+docs/02_index_notes.md
+docs/03_query_notes.md
+
+# Claude Code configuration
+CLAUDE.md
