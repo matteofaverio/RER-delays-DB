@@ -30,5 +30,14 @@ docs/01_task_order.md
 docs/02_index_notes.md
 docs/03_query_notes.md
 
+# Project report and slides (LaTeX source + figures)
+docs/report.tex
+docs/slides.tex
+docs/figures/
+
+# Database dump (large binary — shared separately)
+data/*.zip
+data/*.dump
+
 # Claude Code configuration
 CLAUDE.md
