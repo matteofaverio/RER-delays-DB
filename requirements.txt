@@ -1,5 +1,8 @@
 pandas
-sqlalchemy
 psycopg[binary]
 python-dotenv
+streamlit
+plotly
+folium
+streamlit-folium
 pytest

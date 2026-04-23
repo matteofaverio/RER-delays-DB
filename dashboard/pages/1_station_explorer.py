@@ -48,9 +48,11 @@ if not df_map.empty:
     # Drill-down (Q5)
     sel_station = st.selectbox("Drill-down: Pick a station from the map results", sorted(df_map["stop_name"].tolist()))
     Q5_SQL = """SELECT date_trunc('day', f.poll_at_utc)::date AS day, round(avg(f.mean_lateness_s)::numeric, 2) AS lateness
-                FROM core.fact_delay_events f JOIN core.dim_stop s ON s.stop_id = f.stop_id 
-                JOIN core.dim_station ds ON ds.station_id = (SELECT station_id FROM core.dim_monomodal_stop WHERE monomodal_code = s.monomodal_code)
-                WHERE ds.stop_name = %(name)s GROUP BY 1 ORDER BY 1;"""
+                FROM core.fact_delay_events f
+                JOIN core.dim_stop s ON s.stop_id = f.stop_id
+                JOIN core.dim_monomodal_stop ms ON ms.monomodal_code = s.monomodal_code
+                JOIN core.dim_station ds ON ds.station_id = ms.station_id
+                WHERE s.stop_type = 'SP' AND ds.stop_name = %(name)s GROUP BY 1 ORDER BY 1;"""
     
     start_q5 = time.time()
     df_t = run_query(Q5_SQL, {"name": sel_station})

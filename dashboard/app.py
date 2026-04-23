@@ -42,7 +42,7 @@ st.markdown("""
 # System at a Glance
 st.markdown("### 📊 System at a Glance")
 m1, m2, m3 = st.columns(3)
-m1.metric("Total Observations", "12.4M+", help="Total rows in core.fact_delay_events")
+m1.metric("Total Observations", "11.8M+", help="Total rows in core.fact_delay_events")
 m2.metric("Network Coverage", "5 Lines / 400+ Stops")
 m3.metric("Observation Period", "Nov 2025 - Apr 2026")
 

@@ -16,7 +16,7 @@ FROM core.fact_delay_events f
 JOIN core.dim_stop s ON s.stop_id = f.stop_id
 JOIN core.dim_monomodal_stop ms ON ms.monomodal_code = s.monomodal_code
 JOIN core.dim_station ds ON ds.station_id = ms.station_id
-WHERE ds.stop_name = %(name)s GROUP BY 1 ORDER BY 1;
+WHERE s.stop_type = 'SP' AND ds.stop_name = %(name)s GROUP BY 1 ORDER BY 1;
 """
 
 start = time.time()
