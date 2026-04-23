@@ -38,12 +38,8 @@ data/
 
 ## Database dump
 
-A full PostgreSQL dump of the loaded database (`rer_delays_db.dump.zip`, ~240 MB) is available on request. It can be restored with:
-
-```bash
-unzip rer_delays_db.dump.zip
-pg_restore -d rer_delays_db rer_delays_db.dump
-```
+A full PostgreSQL dump of the loaded database (`rer_delays_db.dump.zip`, ~250 MB) is available at the following google drive link:
+https://drive.google.com/file/d/1LLwzQz1b9S0i-zjN0F_3uW30rrY-gvKT/view?usp=drive_link
 
 ## Setup from scratch
 
